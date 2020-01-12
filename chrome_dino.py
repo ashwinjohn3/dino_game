@@ -24,7 +24,7 @@ class dino:
 
     def move(self):
         self.clk += 1
-        displacement = self.vel * self.clk + .5 * 3 * self.clk**2
+        displacement = (self.vel * self.clk + .5 * 3 * self.clk**2)1.618
         if displacement > 300:
             displacement = 300
         self.y = displacement
